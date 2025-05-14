@@ -52,10 +52,42 @@ class securitytxt{
 
 
 
+    /**
+     * Verschlüsselungsinformation setzen
+     *
+     * @param string $encryption URL zum Verschlüsselungsschlüssel
+     * @return $this
+     */
+    public function set_encryption($encryption) {
+        $this->config['encryption'] = $encryption;
+        return $this;
+    }
+
+    /**
+     * Anerkennungs-URL setzen
+     *
+     * @param string $acknowledgments URL zur Anerkennungsseite
+     * @return $this
+     */
+    public function set_acknowledgments($acknowledgments) {
+        $this->config['acknowledgments'] = $acknowledgments;
+        return $this;
+    }
+
+    /**
+     * Sicherheitsrichtlinien-URL setzen
+     *
+     * @param string $policy URL zur Sicherheitsrichtlinie
+     * @return $this
+     */
+    public function set_policy($policy) {
+        $this->config['policy'] = $policy;
+        return $this;
+    }
 
 
 
-    
+
 
 
 
